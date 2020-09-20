@@ -1,4 +1,3 @@
-# This is a sample Python script.
 def getMultiples(multiplied_value, max_value):
     multiples = []
     multiplicative = 1
