@@ -2,11 +2,11 @@
 def getMultiples(multiplied_value, max_value):
     multiples = []
     multiplicative = 1
-    powered_multiplied_value = multiplied_value * multiplicative
-    while powered_multiplied_value <= max_value:
-        multiples.append(powered_multiplied_value)
+    multiple_of = multiplied_value * multiplicative
+    while multiple_of <= max_value:
+        multiples.append(multiple_of)
         multiplicative += 1
-        powered_multiplied_value = multiplied_value * multiplicative
+        multiple_of = multiplied_value * multiplicative
 
     return multiples
 
