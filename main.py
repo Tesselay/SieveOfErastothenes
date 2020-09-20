@@ -2,9 +2,11 @@
 def getMultiples(multiplied_value, max_value):
     multiples = []
     power = 1
-    while( multiplied_value ^ power <= max_value ):
+    multiplied_value ^= power
+    while( multiplied_value <= max_value ):
         multiples.append(multiplied_value)
         power += 1
+        multiplied_value ^= power
 
     return multiples
 
