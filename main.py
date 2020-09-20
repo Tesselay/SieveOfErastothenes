@@ -21,8 +21,7 @@ if __name__ == '__main__':
             crossed_out_values.index(start_value)
         except ValueError as e:
             prime_numbers.append(start_value)
-            new_crossed_out_values = getMultiples(start_value, max_value)
-            crossed_out_values.extend(new_crossed_out_values)
+            crossed_out_values.extend(getMultiples(start_value, max_value))
 
         start_value += 1
 
