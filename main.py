@@ -1,12 +1,12 @@
 # This is a sample Python script.
 def getMultiples(multiplied_value, max_value):
     multiples = []
-    power = 1
-    multiplied_value ^= power
-    while( multiplied_value <= max_value ):
-        multiples.append(multiplied_value)
-        power += 1
-        multiplied_value ^= power
+    multiplicator = 1
+    powered_multiplied_value = multiplied_value * multiplicator
+    while( powered_multiplied_value <= max_value ):
+        multiples.append(powered_multiplied_value)
+        multiplicator += 1
+        powered_multiplied_value = multiplied_value * multiplicator
 
     return multiples
 
@@ -26,3 +26,6 @@ if __name__ == '__main__':
             crossed_out_values.extend(new_crossed_out_values)
 
         start_value += 1
+
+    print(crossed_out_values)
+    print(prime_numbers)
