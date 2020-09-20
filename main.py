@@ -1,12 +1,12 @@
 # This is a sample Python script.
 def getMultiples(multiplied_value, max_value):
     multiples = []
-    multiplicator = 1
-    powered_multiplied_value = multiplied_value * multiplicator
-    while( powered_multiplied_value <= max_value ):
+    multiplicative = 1
+    powered_multiplied_value = multiplied_value * multiplicative
+    while powered_multiplied_value <= max_value:
         multiples.append(powered_multiplied_value)
-        multiplicator += 1
-        powered_multiplied_value = multiplied_value * multiplicator
+        multiplicative += 1
+        powered_multiplied_value = multiplied_value * multiplicative
 
     return multiples
 
